@@ -1,10 +1,10 @@
 package com.son.MapListList;
 
-import com.sun.tools.javac.comp.Resolve;
 import lombok.val;
 
-import javax.swing.event.ListDataEvent;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class MapListList {

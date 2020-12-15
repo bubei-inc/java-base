@@ -1,8 +1,5 @@
 package com.son.design.singlemode;
 
-import com.son.pool.fixedthreadpool.FixedThreadPool;
-import com.sun.xml.internal.ws.wsdl.writer.UsingAddressing;
-
 public class LazySingle {
 
     private static LazySingle LAZY_SINGLE;

@@ -1,12 +1,8 @@
 package com.son.thisclass;
 
 import lombok.val;
-import sun.jvm.hotspot.memory.TenuredGeneration;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 public class TestMain {
     public static void main(String[] args) {

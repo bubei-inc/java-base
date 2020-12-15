@@ -1,9 +1,5 @@
 package com.sun.juc.threadlocal;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-import sun.lwawt.macosx.CSystemTray;
-
 import java.lang.ref.SoftReference;
 
 public class SoftRef {

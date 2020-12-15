@@ -1,9 +1,27 @@
 package com.sun.juc.sync;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class SyncMain {
-    List<String> list = Collections.synchronizedList(new ArrayList<>());
+    public static final Object LOCK = "";
+
+    public static void main(String[] args) {
+        new Thread(() -> {
+            print(Thread.currentThread().getName());
+        }).start();
+
+        new Thread(() -> {
+            print(Thread.currentThread().getName());
+        }).start();
+    }
+
+    private static void print(String threadName) {
+        synchronized (LOCK) {
+            System.out.println(threadName);
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
